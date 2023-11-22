@@ -6,6 +6,18 @@
 </head>
 <body>
 <script>
+    function acreageAndPerimeter(num) {
+        let acreage = num * num * Math.PI;
+        let perimeter = num * 2 * Math.PI;
+        return {acreage, perimeter};
+
+    }
+
+    let num = +prompt("nhap ban kinh hinh tron")
+    let {acreage, perimeter} = acreageAndPerimeter(num);
+    document.write(acreage + " dien tich hinh tron voi ban kinh la " + num)
+    document.write("<br>");
+    document.write(perimeter + " dien tich hinh tron voi ban kinh la " + num)
 
 </script>
 </body>

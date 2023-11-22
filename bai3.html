@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calculation(num) {
+        let sum = 0;
+        for (let i = 1; i <= num; i++) {
+            sum *= i
+        }
+        return sum;
+    }
+
+    let number = +parseInt(prompt(" nhap so can tim giai thua"))
+    let result = calculation(number);
+    document.write(result + " la giai thua cua " + number);
+</script>
+</body>
+</html>
