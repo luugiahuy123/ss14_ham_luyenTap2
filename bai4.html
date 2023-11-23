@@ -6,18 +6,19 @@
 </head>
 <body>
 <script>
-    function checkNumber(num) {
-        if (num < 0 && num > 0 && num == 0) {
+    function checkNumber(n) {
+        if (n < 0 && n > 0 && n == 0) {
             return true;
         } else {
             return false;
         }
     }
+
     let num = prompt("nhap phan tu");
-    if (checkNumber(num)){
-      document.write(num + " la ky tu so");
+    if (checkNumber(num)) {
+        document.write(num + " ko la ky tu so");
     } else {
-      document.write(num + " ko phai la ky tu so");
+        document.write(num + " la ky tu so");
     }
 </script>
 </body>
